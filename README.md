@@ -87,14 +87,14 @@ Input (source)                              Input (target, shifted right)
 
 | Component | Paper Section | File | Description |
 |:---|:---:|:---|:---|
-| Token Embedding | §3.4 | `model/embedding.py` | Learnable embeddings scaled by √d_model |
-| Positional Encoding | §3.5 | `model/embedding.py` | Sinusoidal position signals (sin/cos) |
-| Scaled Dot-Product Attention | §3.2.1 | `model/attention.py` | `softmax(QKᵀ/√d_k) V` |
-| Multi-Head Attention | §3.2.2 | `model/attention.py` | h parallel attention heads, concatenated |
-| Position-wise FFN | §3.3 | `model/feed_forward.py` | Two linear layers with ReLU: `max(0, xW₁+b₁)W₂+b₂` |
-| Encoder Layer | §3.1 | `model/encoder.py` | Self-attention → Add&Norm → FFN → Add&Norm |
-| Decoder Layer | §3.1 | `model/decoder.py` | Masked self-attn → Cross-attn → FFN (each with Add&Norm) |
-| Noam LR Schedule | §5.3 | `utils/lr_scheduler.py` | Warmup + inverse-sqrt decay |
+| Token Embedding | 3.4 | `model/embedding.py` | Learnable embeddings scaled by √d_model |
+| Positional Encoding | 3.5 | `model/embedding.py` | Sinusoidal position signals (sin/cos) |
+| Scaled Dot-Product Attention | 3.2.1 | `model/attention.py` | `softmax(QKᵀ/√d_k) V` |
+| Multi-Head Attention | 3.2.2 | `model/attention.py` | h parallel attention heads, concatenated |
+| Position-wise FFN | 3.3 | `model/feed_forward.py` | Two linear layers with ReLU: `max(0, xW₁+b₁)W₂+b₂` |
+| Encoder Layer | 3.1 | `model/encoder.py` | Self-attention → Add&Norm → FFN → Add&Norm |
+| Decoder Layer | 3.1 | `model/decoder.py` | Masked self-attn → Cross-attn → FFN (each with Add&Norm) |
+| Noam LR Schedule | 5.3 | `utils/lr_scheduler.py` | Warmup + inverse-sqrt decay |
 
 ### Default Hyperparameters (Base Model)
 
