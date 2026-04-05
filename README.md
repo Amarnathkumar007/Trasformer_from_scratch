@@ -315,6 +315,3 @@ Following the paper (Section 5.4), we use label smoothing with ε = 0.1 during t
 
 ---
 
-## 📄 License
-
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
